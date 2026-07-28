@@ -47,7 +47,7 @@ main{
     text-wrap: wrap;
     overflow-wrap: break-word;
     background-color: var(--color-white);
-    max-width: 36.8rem;
+    max-width: 44rem;
     height: fit-content;
     padding: 2rem;
     border-radius: 1.5rem;
@@ -76,7 +76,6 @@ h2{
 }
 
 p, ul, ol{
-    font-size: .8rem;
     font-weight: 400;
     color: var(--color-stone-600);
     margin: 0;
@@ -92,8 +91,8 @@ li{
 }
 
 ul li::marker{
-    font-size: 0.6rem;
     color: var(--color-brown-800);
+    font-size: 1rem;
 }
 
 ol li::marker{
@@ -113,7 +112,6 @@ ol li::marker{
 .prep-title{
     color: var(--color-rose-800);
     font-weight: 700;
-    font-size: 1rem;
     margin: unset;
     padding-bottom: 0.5rem;
 }
@@ -127,7 +125,6 @@ hr{
 table{
     width: 100%;
     border-collapse: collapse;
-    font-size: .8rem;
     color: var(--color-stone-600);
 }
 
@@ -139,9 +136,14 @@ td{
     padding: 0.5rem;
 }
 
+.macro{
+    padding-inline-start: 2rem;
+}
+
 .macro-amount{
     color: var(--color-brown-800);
     font-weight: 700;
+    padding-inline-end: 2rem;
 }
 
 .attribution {
