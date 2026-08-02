@@ -29,8 +29,8 @@
 }
 
 body{
-    margin: 6rem;
-    padding: 0;
+    margin: 0;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,17 +38,16 @@ body{
     min-height: 100vh;
     font-family: 'Outfit', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     background-color: var(--color-stone-100);
+    gap: 2rem;
 }
 
 main{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    text-wrap: wrap;
     overflow-wrap: break-word;
     background-color: var(--color-white);
     max-width: 44rem;
-    height: fit-content;
     padding: 2rem;
     border-radius: 1.5rem;
     gap: 1rem;
@@ -58,7 +57,7 @@ main{
 img{
     width: 100%;
     border-radius: .6rem;
-    margin-bottom: 1.5rem;
+    margin-block-end: 1.5rem;
 }
 
 h1, h2{
@@ -92,7 +91,7 @@ li{
 
 ul li::marker{
     color: var(--color-brown-800);
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 ol li::marker{
@@ -106,18 +105,18 @@ ol li::marker{
     height: min-content;
     padding: 1.25rem;
     border-radius: 1rem;
-    margin-bottom: 1rem;
+    margin-block-end: 1rem;
 }
 
 .prep-title{
     color: var(--color-rose-800);
     font-weight: 700;
     margin: unset;
-    padding-bottom: 0.5rem;
+    padding-block-end: 0.5rem;
 }
 
 hr{
-    border: none;
+    border: 0;
     border-top: 1px solid var(--color-stone-150);
     width: 100%;
 }
@@ -129,7 +128,7 @@ table{
 }
 
 tr {
-  border-bottom: 1px solid var(--color-stone-150);
+  border-block-end: 1px solid var(--color-stone-150);
 }
 
 td{
@@ -147,7 +146,7 @@ td{
 }
 
 .attribution {
-    font-size: 0.6875rem;
+    font-size: 0.8rem;
     text-align: center;
 }
 .attribution a {
