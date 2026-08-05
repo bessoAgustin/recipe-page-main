@@ -22,6 +22,7 @@
     --color-rose-800: hsl(332, 51%, 32%);
     --color-rose-50: hsl(330, 100%, 98%);
     --color-attr-blue: hsl(228, 45%, 44%);
+    --card-padding: 2rem;
 }
 
 *{
@@ -49,7 +50,7 @@ main{
     background-color: var(--color-white);
     max-width: 44rem;
     width: 100%;
-    padding: 2rem;
+    padding: var(--card-padding);
     border-radius: 1.5rem;
     gap: 1rem;
     line-height: 1.5rem;
@@ -138,6 +139,8 @@ td{
 }
 
 .macro{
+    font-weight: 400;
+    text-align: start;
     padding-inline-start: 2rem;
 }
 
@@ -164,10 +167,9 @@ footer a {
     }
     img{
         border-radius: 0;
-        margin-block-start: -2rem;
-        margin-inline-end: -2rem;
-        margin-inline-start: -2rem;
-        width: calc(100% + 4rem);
+        margin-block-start: calc(-1 * var(--card-padding));
+        margin-inline:calc(-1 * var(--card-padding));
+        width: calc(100% + 2* var(--card-padding));
     }
     footer{
         margin-block-end: 1rem;
